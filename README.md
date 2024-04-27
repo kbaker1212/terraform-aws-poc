@@ -12,7 +12,6 @@ terraform/
   ├── main.tf        # Main Terraform configuration file
   ├── variables.tf   # Variable definitions for main configuration
   ├── outputs.tf     # Outputs from the main configuration
-  ├── terraform.tfvars  # Optional: Store variable values for Terraform
   ├── backend.tf     # Optional: Terraform backend configuration (e.g., S3, Terraform Cloud)
   ├── providers.tf   # Optional: Configure Terraform providers (e.g., AWS)
   ├── README.md      # Project overview and setup instructions
