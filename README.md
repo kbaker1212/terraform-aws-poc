@@ -3,9 +3,7 @@ Proof of concept for client
 
 
 
-
-
-
+```
 
 
 Diagram of folder structure used to create infra 
