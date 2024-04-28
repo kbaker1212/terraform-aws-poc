@@ -19,4 +19,7 @@ variable "sub4_id" {
 variable "public_sg_id" {
   type = string
 }
+variable "key_name" {
+  type = string
+}
 

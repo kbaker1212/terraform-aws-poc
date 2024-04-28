@@ -2,6 +2,7 @@
 resource "aws_instance" "ec2_instance" {
   ami           = var.redhat_ami  # AMI for Red Hat Linux
   instance_type = "t2.micro"      # Instance type
+  key_name      = var.key_name  # Key name passed from the module
   subnet_id     = var.sub2_id     # Public subnet
   security_groups = [var.public_sg_id]  # Use the public security group
 

@@ -1,3 +1,9 @@
+# Define the key pair for SSH access
+resource "aws_key_pair" "my_new_key_pair" {
+  key_name   = "my-new-key"  # Unique name for the key pair
+  public_key = file("~/.ssh/my-new-key.pub")  # Path to your public key
+}
+
 # Import the VPC module
 module "vpc" {
   source     = "./modules/vpc"  # Path to the VPC module
@@ -18,6 +24,8 @@ module "compute" {
   sub3_id       = module.vpc.sub3_id   # Private subnet IDs for ASG
   sub4_id       = module.vpc.sub4_id   # Private subnet IDs for ASG
   public_sg_id  = module.security.public_sg_id  # Security group ID for public instances
+  key_name      = aws_key_pair.my_new_key_pair.key_name  # Reference the key pair
+
 }
 
 # Import the Application Load Balancer module
