@@ -17,7 +17,7 @@ resource "aws_launch_configuration" "asg_lc" {
   image_id      = var.redhat_ami  # Red Hat Linux AMI
   instance_type = "t2.micro"      # Instance type
 
-  user_data = <<-EOF
+  user_data = <<EOF
     #!/bin/bash
     sudo yum install -y httpd  # Install Apache
     sudo systemctl start httpd

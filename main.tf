@@ -40,5 +40,5 @@ module "alb" {
 # Import the S3 storage module
 module "s3" {
   source      = "./modules/s3"  # Path to the S3 storage module
-  bucket_name = "9911techpoc"  # Set your S3 bucket name
+  bucket_name = "121314kb"  # Set your S3 bucket name
 }
