@@ -1,8 +1,3 @@
-# Define the provider (in this case, AWS)
-provider "aws" {
-  region  = "us-east-1"  # Set your desired region
-}
-
 # Import the VPC module
 module "vpc" {
   source     = "./modules/vpc"  # Path to the VPC module
@@ -35,6 +30,5 @@ module "alb" {
 # Import the S3 storage module
 module "s3" {
   source      = "./modules/s3"  # Path to the S3 storage module
-  bucket_name = "my-terraform-s3-bucket"  # Set your S3 bucket name
+  bucket_name = "9911techpoc"  # Set your S3 bucket name
 }
-

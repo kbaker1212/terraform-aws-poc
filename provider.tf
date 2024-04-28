@@ -1,6 +1,7 @@
 # Configure the AWS provider
 provider "aws" {
-  region  = "us-east-1"  # Set the region
+ region  = "us-east-1"  # Set the region
+ profile = "Kodyb"
 }
 
 # Optional: Provide credentials through environment variables or hardcoded values
