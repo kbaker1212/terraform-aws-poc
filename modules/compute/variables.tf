@@ -13,6 +13,9 @@ variable "sub3_id" {
   type = string
 }
 
+variable "sub4_id" {
+  type = string
+}
 variable "public_sg_id" {
   type = string
 }

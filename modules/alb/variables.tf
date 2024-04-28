@@ -8,6 +8,11 @@ variable "sub3_id" {
   type = string
 }
 
+
+variable "sub4_id" {
+  type = string
+}
+
 variable "target_group_arn" {
   type = string
 }

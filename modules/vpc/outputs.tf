@@ -13,3 +13,13 @@ output "sub2_id" {
   value = aws_subnet.sub2.id
 }
 
+# Output the ID of the third subnet
+output "sub3_id" {
+  value = aws_subnet.sub3.id  # Ensure this points to the correct resource
+}
+
+# Output the ID of the fourth subnet (if needed)
+output "sub4_id" {
+  value = aws_subnet.sub4.id  # If referencing the fourth subnet
+}
+
