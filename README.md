@@ -1,5 +1,7 @@
 # terraform-aws-poc
 
+When running ensure your using the correct profile ; Its setup to use profile ; this can be tweaked or you can use aws cli to run your own profile onto the node your deploying it. 
+
 Diagram of folder structure used to create infra 
 ```
 terraform/
