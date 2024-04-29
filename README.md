@@ -12,9 +12,9 @@ terraform/
   ├── main.tf        # Main Terraform configuration file
   ├── variables.tf   # Variable definitions for main configuration
   ├── outputs.tf     # Outputs from the main configuration
-  ├── backend.tf     # Optional: Terraform backend configuration (e.g., S3, Terraform Cloud)
-  ├── providers.tf   # Optional: Configure Terraform providers (e.g., AWS)
-  ├── README.md      # Project overview and setup instructions
+  ├── backend.tf     #  Terraform backend configuration (S3)
+  ├── providers.tf   #  Configure Terraform providers (AWS)
+  ├── README.md      # Project overview 
   ├── modules/
   │   ├── vpc/
   │   │   ├── main.tf        # Define VPC, subnets, internet gateway, route tables, etc.
