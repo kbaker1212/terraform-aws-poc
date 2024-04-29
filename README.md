@@ -1,7 +1,7 @@
 # terraform-aws-poc
 
 Diagram of folder structure used to create infra 
-
+```
 terraform/
   ├── main.tf        # Main Terraform configuration file
   ├── variables.tf   # Variable definitions for main configuration
